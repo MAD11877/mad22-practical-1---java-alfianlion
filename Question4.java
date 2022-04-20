@@ -20,12 +20,12 @@ public class Question4 {
 
     int loopNumber = in.nextInt();
 
-    for (int i = 0; i < loopNumber; i++) {
-      System.out.print("*");
-      if (i == loopNumber) {
-        System.out.println("x");
+    while (loopNumber > 0) {
+      for (int i = loopNumber; i > 0; i--) {
+        System.out.print("*");
       }
-
+      loopNumber--;
+      System.out.println();
     }
 
   }
